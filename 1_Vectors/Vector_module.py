@@ -70,11 +70,6 @@ class Vector(object):
         return np.sum(coordinates_products)
         
     def angle_with(self, v, in_degrees=False):
-#        dotted = self.dot(v)
-#        size1 = self.magnitude()
-#        size2 = v.magnitude()
-#        result = dotted/size1/size2
-#        return np.degrees(np.arccos(np.clip(result, -1.0, 1.0)))
         try:
             u1 = self.normalized()
             u2 = v.normalized()
